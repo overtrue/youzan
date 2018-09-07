@@ -1,0 +1,20 @@
+{
+    "name": "overtrue/youzan",
+    "description": "Youzan API client.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "overtrue",
+            "email": "anzhengchao@gmail.com"
+        }
+    ],
+    "require": {
+        "overtrue/http": "^1.0",
+        "symfony/cache": "^4.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Overtrue\\Youzan\\": "./src"
+        }
+    }
+}
