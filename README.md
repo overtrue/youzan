@@ -1,7 +1,6 @@
-<h1 align="center"> youzan </h1>
+<h1 align="center"> Youzan</h1>
 
-<p align="center"> Youzan API client..</p>
-
+<p align="center">Youzan API client.</p>
 
 ## Installing
 
@@ -11,7 +10,22 @@ $ composer require overtrue/youzan -vvv
 
 ## Usage
 
-TODO
+```php
+
+use Overtrue\Youzan\Client;
+
+$clientId = '0a24a9a466xxxxxxx';
+$clientSecret = 'eeb65cce4e1adf251306dxxxxxxxx';
+$storeId = 40050388;
+
+$client = new Client($clientId, $clientSecret, $storeId);
+
+$response = $client->get('youzan.pay.qrcodes.get', ['page_size' => 1, 'page_no' => 1]);
+
+// or 
+
+$response = $client->post('youzan.pay.xxxx.xxx', ['xxx' => 'xxx']);
+```
 
 ## Contributing
 
